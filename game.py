@@ -1,3 +1,8 @@
+## This algo find a list of number
+## pick from set
+## that sum to TARGET
+## and whom len is maxSize
+## It is nto very efficient
 TARGET  = 38
 
 BACK = -1
