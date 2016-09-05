@@ -3,15 +3,15 @@
 ## that sum to TARGET
 ## and whom len is maxSize
 ## It is nto very efficient
-TARGET  = 64
+TARGET  = 37
 
 BACK = -1
 STOP = 0
 FORWARD = 1
 
-bags=[9,8,7,6,5,4,3,2,1]
+bags=[1,3,5,7,4]
 
-maxSize = 23
+maxSize = 10
 
 path=[]
 
