@@ -3,13 +3,13 @@
 ## that sum to TARGET
 ## and whom len is maxSize
 ## It is nto very efficient
-TARGET  = 38
+TARGET  = 37
 
 BACK = -1
 STOP = 0
 FORWARD = 1
 
-bags=[7,5,3,1]
+bags=[7,5,3,1,4,6]
 
 maxSize = 10
 
