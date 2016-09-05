@@ -3,15 +3,15 @@
 ## that sum to TARGET
 ## and whom len is maxSize
 ## It is nto very efficient
-TARGET  = 37
+TARGET  = 64
 
 BACK = -1
 STOP = 0
 FORWARD = 1
 
-bags=[7,5,3,1,4,6]
+bags=[9,8,7,6,5,4,3,2,1]
 
-maxSize = 10
+maxSize = 23
 
 path=[]
 
@@ -21,17 +21,13 @@ def addMoar(v):
   with open("path.txt","a") as f:
     f.write(str(path))
     f.write("\n")
-  print("Sum: %d"%sum(path))
   #raw_input("Press Enter to continue...")
-  print(len(path))
-  if (len(path) > 10) or (sum(path) > TARGET):
-    print("opo")
+  if (len(path) > maxSize) or (sum(path) > TARGET):
     path.pop()
     return BACK
-  if (len(path) == 10) and (sum(path) == TARGET):
+  if (len(path) == maxSize) and (sum(path) == TARGET):
     return STOP
   for v in bags:
-    print(v)
     rep = addMoar(v)
     if rep == FORWARD: 
       continue
@@ -43,3 +39,7 @@ def addMoar(v):
 
 addMoar(7)
 
+print"*"*20
+print(len(path))
+print(sum(path))
+print path
